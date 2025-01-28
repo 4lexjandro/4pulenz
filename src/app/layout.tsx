@@ -29,11 +29,11 @@ export default function RootLayout({
               Gallery
             </Link>
             <Popover>
-              <PopoverTrigger className='py-2 px-3 animate-lavender-dream rounded'>Get a quote</PopoverTrigger>
+              <PopoverTrigger className='py-2 px-3 animate-lavender-dream rounded'>Get a free estimate</PopoverTrigger>
               <PopoverContent className='bg-[#1a1a1a] border-0 w-[200px] text-white'>
                 <div className='flex flex-col gap-5'>
-                  <a href='mailto:info@4pulenz.com'>info@4pulenz.com</a>
-                  <a href='tel:9144398482'> 914 - 439 - 8482</a>
+                  <a href='mailto:4pulenz@gmail.com'>4pulenz@gmail.com</a>
+                  <a href='tel:9142303744'> 914 - 230 - 3744</a>
                 </div>
               </PopoverContent>
             </Popover>
