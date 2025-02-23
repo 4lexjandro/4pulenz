@@ -25,7 +25,6 @@ import Gallery19 from './gallery/pic57.jpg';
 import Gallery20 from './gallery/pic58.jpg';
 import Gallery21 from './gallery/pic59.jpg';
 import Gallery22 from './gallery/pic60.jpg';
-import Gallery23 from './gallery/pic61.jpg';
 import Gallery24 from './gallery/pic62.jpg';
 import Gallery25 from './gallery/pic63.jpg';
 
@@ -59,7 +58,7 @@ export {
   Gallery20,
   Gallery21,
   Gallery22,
-  Gallery23,
+
   Gallery24,
   Gallery25,
   
