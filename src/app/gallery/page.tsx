@@ -25,7 +25,6 @@ import {
   Gallery23,
   Gallery24,
   Gallery25,
-  
   Roller,
   FPV,
   Air,
@@ -47,19 +46,18 @@ const page = () => {
     Gallery11,
     Gallery12,
     Gallery13,
-  Gallery14,
-  Gallery15,
-  Gallery16,
-  Gallery17,
-  Gallery18,
-  Gallery19,
-  Gallery20,
-  Gallery21,
-  Gallery22,
-  Gallery23,
-  Gallery24,
-  Gallery25,
-  
+    Gallery14,
+    Gallery15,
+    Gallery16,
+    Gallery17,
+    Gallery18,
+    Gallery19,
+    Gallery20,
+    Gallery21,
+    Gallery22,
+    Gallery23,
+    Gallery24,
+    Gallery25,
     Roller,
     FPV,
     Air,
@@ -74,7 +72,7 @@ const page = () => {
           {images.map((img: StaticImageData) => {
             return <Image className='aspect-auto w-full object-cover mb-3' alt='photo' src={img} />;
           })}
-          {/* <video className=' h-auto mb-3' autoPlay loop>
+          <video className=' h-auto mb-3' autoPlay loop>
             <source src='/videos/DJI.mp4' />
           </video>
           <video className=' h-auto mb-3' autoPlay loop>
@@ -82,7 +80,7 @@ const page = () => {
           </video>
           <video className=' h-auto mb-3' autoPlay loop>
             <source src='/videos/DJI3.mp4' />
-          </video> */}
+          </video>
         </div>
       </div>
     </div>
