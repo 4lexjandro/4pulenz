@@ -14,7 +14,21 @@ import Gallery8 from './gallery/Pic7.jpg';
 import Gallery9 from './gallery/Pic9.jpg';
 import Gallery10 from './gallery/SRT.png';
 import Gallery11 from './gallery/Z.jpg';
-import Gallery12 from './gallery/lexus.png';
+import Gallery12 from './gallery/pic50.jpg';
+import Gallery13 from './gallery/pic51.jpg';
+import Gallery14 from './gallery/pic52.jpg';
+import Gallery15 from './gallery/pic53.jpg';
+import Gallery16 from './gallery/pic54.jpg';
+import Gallery17 from './gallery/pic55.jpg';
+import Gallery18 from './gallery/pic56.jpg';
+import Gallery19 from './gallery/pic57.jpg';
+import Gallery20 from './gallery/pic58.jpg';
+import Gallery21 from './gallery/pic59.jpg';
+import Gallery22 from './gallery/pic60.jpg';
+import Gallery23 from './gallery/pic61.jpg';
+import Gallery24 from './gallery/pic62.jpg';
+import Gallery25 from './gallery/pic63.jpg';
+
 
 export {
   Ground,
@@ -34,4 +48,19 @@ export {
   Gallery10,
   Gallery11,
   Gallery12,
+  Gallery13,
+  Gallery14,
+  Gallery15,
+  Gallery16,
+  Gallery17,
+  Gallery18,
+  Gallery19,
+  Gallery20,
+  Gallery21,
+  Gallery22,
+  Gallery23,
+  Gallery24,
+  Gallery25,
+  
+
 };
