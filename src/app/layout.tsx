@@ -29,7 +29,7 @@ export default function RootLayout({
               Gallery
             </Link>
             <Popover>
-              <PopoverTrigger className='py-2 px-3 animate-lavender-dream rounded'>Get a free estimate</PopoverTrigger>
+              <PopoverTrigger className='py-2 px-3 animate-lavender-dream rounded'>Contact</PopoverTrigger>
               <PopoverContent className='bg-[#1a1a1a] border-0 w-[200px] text-white'>
                 <div className='flex flex-col gap-5'>
                   <a href='mailto:4pulenz@gmail.com'>4pulenz@gmail.com</a>
@@ -57,7 +57,7 @@ export default function RootLayout({
               <Image alt='Tiktok' src={Tiktok} width={20} height={20} />
             </Link>
           </div>
-        </footer>
+        </footer>           
       </body>
     </html>
   );
