@@ -26,7 +26,13 @@ export default function RootLayout({
           </Link>
           <div className='flex items-center gap-5'>
             <Link className='z-10' href={'/gallery'}>
+              Services
+            </Link>
+            <Link className='z-10' href={'/gallery'}>
               Gallery
+            </Link>
+            <Link className='z-10' href={'/contact'}>
+              Contact
             </Link>
             <Popover>
               <PopoverTrigger className='py-2 px-3 animate-lavender-dream rounded'>Contact</PopoverTrigger>
