@@ -92,7 +92,7 @@ export default function ContactPage() {
       name="message"
       placeholder="Message"
       required
-      rows="4"
+      rows={4}
       className="bg-transparent border-b border-white text-white placeholder-white focus:outline-none focus:border-red-500 py-2"
     />
     <button
