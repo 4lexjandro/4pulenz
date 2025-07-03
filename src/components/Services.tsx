@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Social, Events, Commercial, Private } from '@Assets/images/image.barrel';
+// import { Social, Events, Commercial, Private } from '@Assets/images/image.barrel';
 
 const services = [
   {
