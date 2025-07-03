@@ -1,4 +1,4 @@
-'use client'; // ← Add this line at the top!
+'use client';
 import { useState } from 'react';
 
 export default function ContactPage() {
@@ -25,19 +25,18 @@ export default function ContactPage() {
   return (
     <div className="relative h-screen w-full overflow-hidden">
       {/* Background Video */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="/Vid.mp4" type="video/quicktime" />
-        Your browser does not support the video tag.
-      </video>
+     <video
+  className="pointer-events-none absolute inset-0 w-full h-full object-cover object-center z-0"
+  autoPlay
+  loop
+  muted
+  playsInline
+>
+  <source src="/Vid.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40 z-10" />
+<div className="absolute inset-0 z-0 pointer-events-none" />
 
       {/* Content Wrapper */}
       <div className="relative z-20 flex items-center h-full px-6 md:px-16">
@@ -69,7 +68,7 @@ export default function ContactPage() {
 ) : (
   <form
     onSubmit={handleSubmit}
-    action="https://formspree.io/f/yourFormID" // ← Replace with your actual Formspree ID
+    action="https://formspree.io/f/mjkwwzna" // ← Replace with your actual Formspree ID
     method="POST"
     className="flex flex-col gap-6"
   >

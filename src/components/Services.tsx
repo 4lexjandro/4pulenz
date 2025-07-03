@@ -1,75 +1,97 @@
 'use client';
-import { motion } from 'framer-motion';
-import { Air, Ground, Roller, FPV } from '@Assets/images/image.barrel';
-import Image from 'next/image';
+
+import { useState } from 'react';
+import { Social, Events, Commercial, Private } from '@Assets/images/image.barrel';
+
+const services = [
+  {
+    key: 'social',
+    title: 'SOCIAL MEDIA CONTENT',
+    subtitle: 'SHORT-FORM VIDEO PACKAGES',
+    description:
+      'Social media is a dynamic and fast-paced environment where consistency is essential to building a strong presence. To help your business stand out, our social media content package is designed to deliver high-quality reels that captivate your audience and drive engagement.',
+    video: '/videos/AirVid.mp4',
+  },
+  {
+    key: 'private',
+    title: 'PRIVATE SHOOTS',
+    subtitle: 'ONE-ON-ONE CREATIVE',
+    description:
+      'From portraits to passion projects, our private shoots focus on personalized, high-quality visuals with your unique style in mind.',
+    video: '/videos/AirVid.mp4',
+  },
+  {
+    key: 'commercial',
+    title: 'COMMERCIAL',
+    subtitle: 'PRODUCT / BRANDING',
+    description:
+      'Make your brand unforgettable with cinematic commercials tailored to your vision, values, and target audience.',
+    video: '/videos/AirVid.mp4',
+  },
+  {
+    key: 'events',
+    title: 'EVENTS',
+    subtitle: 'LIVE THE MAGIC AGAIN',
+    description:
+      'Perfect for capturing the energy and emotion of live events, our recap package distills your event’s highlights into a visually compelling narrative.',
+    video: '/videos/AirVid.mp4',
+  },
+];
 
 const Services = () => {
-  return (
-    <div className='flex flex-col items-center justify-center h-dvh'>
-      <div className='relative flex flex-col items-center gap-5 w-[95%]'>
-        <h1 className='text-lg font-semibold uppercase mb-20'>Services</h1>
+  const [activeService, setActiveService] = useState(services[0]);
 
-        <div className=' w-full flex flex-col gap-3  md:hidden'>
-          <div className=' h-[100px] animate-lavender-dream flex flex-col items-center justify-center'>
-            <h1 className='text-white text-md font-medium tracking-wide z-10'>Air/Ground Photos</h1>
-          </div>
-          <div className=' h-[100px] animate-lavender-dream flex flex-col items-center justify-center'>
-            <h1 className='text-white text-md font-medium tracking-wide z-10'>Air/Ground Videos</h1>
-          </div>
-          <div className=' h-[100px] animate-lavender-dream flex flex-col items-center justify-center'>
-            <h1 className='text-white text-md font-medium tracking-wide z-10'>Rollers</h1>
-          </div>
-          <div className=' h-[100px] animate-lavender-dream flex flex-col items-center justify-center'>
-            <h1 className='text-white text-md font-medium tracking-wide z-10'>FPV</h1>
-          </div>
+  return (
+    <div className='min-h-screen bg-black text-white flex flex-col items-center py-5 px-4'>
+      <h2 className='text-md tracking-widest text-gray-400 mb-6 text-center'>EXPLORE OUR SERVICES</h2>
+
+      {/* Button group */}
+      <div className='flex flex-col md:flex-row flex-wrap gap-4 mb-12 w-full max-w-3xl items-center justify-center'>
+        {services.map((service) => {
+          const isActive = activeService.key === service.key;
+          return (
+            <button
+              key={service.key}
+              onClick={() => setActiveService(service)}
+              className={`w-full md:w-auto px-4 py-2 text-sm font-semibold transition-all duration-300
+                ${
+                  isActive
+                    ? 'bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-red-500 drop-shadow-[0_0_8px_rgba(255,0,128,0.7)]'
+                    : 'text-white hover:text-purple-300'
+                }`}
+            >
+              {service.title.split(' ')[0]}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Content section */}
+      <div className='max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-2'>
+        {/* Video preview */}
+        <div className='flex flex-col items-center md:items-start w-full'>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className='rounded-xl w-full object-cover max-w-md shadow-md'
+          >
+            <source src={activeService.video} type='video/mp4' />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
-        <div className='hidden md:flex flex-col gap-3  w-[600px]'>
-          <motion.div
-            initial={{ height: '100px' }}
-            whileHover={{ height: '250px', transition: { ease: 'easeInOut', duration: '0.2' } }}
-            className='relative bg-slate-200 flex flex-col items-center justify-center overflow-hidden '
-          >
-            <Image
-              alt='Ground Photo'
-              src={Ground}
-              width={600}
-              height={250}
-              className='absolute top-0 object-cover '
-              priority
-            />
-            <div className='w-full h-full absolute top-0 backdrop-blur-[2px] bg-white/10 '></div>
-            <motion.h1 className='text-black text-md font-medium tracking-wide z-10'>Air/Ground Photos</motion.h1>
-          </motion.div>
-          <motion.div
-            initial={{ height: '100px' }}
-            whileHover={{ height: '250px', transition: { ease: 'easeInOut', duration: '0.2' } }}
-            className='relative bg-slate-200 flex flex-col items-center justify-center overflow-hidden'
-          >
-            <Image alt='Ground Vid' src={Air} width={600} height={250} className='absolute top-0' priority />
-            <div className='w-full h-full absolute top-0 backdrop-blur-[2px] bg-white/10 '></div>
-
-            <motion.h1 className='text-black text-md font-medium tracking-wide z-10'>Air/Ground Videos</motion.h1>
-          </motion.div>
-          <motion.div
-            initial={{ height: '100px' }}
-            whileHover={{ height: '250px', transition: { ease: 'easeInOut', duration: '0.2' } }}
-            className='relative bg-slate-200 flex flex-col items-center justify-center overflow-hidden'
-          >
-            <Image alt='Roller' src={Roller} width={600} height={250} className='absolute top-0' priority />
-            <div className='w-full h-full absolute top-0 backdrop-blur-[2px] bg-white/10 '></div>
-
-            <motion.h1 className='text-black text-md font-medium tracking-wide z-10'>Rollers</motion.h1>
-          </motion.div>
-          <motion.div
-            initial={{ height: '100px' }}
-            whileHover={{ height: '250px', transition: { ease: 'easeInOut', duration: '0.2' } }}
-            className='relative bg-slate-200 flex flex-col items-center justify-center overflow-hidden'
-          >
-            <Image alt='FPV' src={FPV} width={600} height={250} className='absolute top-0' priority />
-            <div className='w-full h-full absolute top-0 backdrop-blur-[2px] bg-white/10 '></div>
-            <motion.h1 className='text-black text-md font-medium tracking-wide z-10'>FPV</motion.h1>
-          </motion.div>
+        {/* Text content */}
+        <div className='text-center md:text-left'>
+          <h1 className='text-lg font-bold leading-tight mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 drop-shadow-[0_0_8px_rgba(255,0,128,0.7)]'>
+            {activeService.title}
+          </h1>
+          <p className='uppercase text-gray-400 tracking-wide text-sm mb-4'>
+            {activeService.subtitle}
+          </p>
+          <div className='border-t border-gray-600 mb-4 w-20 mx-auto md:mx-0'></div>
+          <p className='text-gray-300 mb-6 whitespace-pre-line'>{activeService.description}</p>
         </div>
       </div>
     </div>
