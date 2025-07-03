@@ -4,23 +4,23 @@ import { useState } from 'react';
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-    const form = e.target;
-    const data = new FormData(form);
+  const form = e.currentTarget;
+  const data = new FormData(form);
 
-    await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        Accept: 'application/json',
-      },
-    });
+  await fetch(form.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      Accept: 'application/json',
+    },
+  });
 
-    form.reset();
-    setSubmitted(true);
-  };
+  form.reset();
+  setSubmitted(true);
+};
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
