@@ -10,7 +10,7 @@ const services = [
     subtitle: 'SHORT-FORM VIDEO PACKAGES',
     description:
       'Social media is a dynamic and fast-paced environment where consistency is essential to building a strong presence. To help your business stand out, our social media content package is designed to deliver high-quality reels that captivate your audience and drive engagement.',
-    image: '/assets/images/CITY.DNG'    
+    image: '/assets/images/Z.jpg'    
       // video: '/videos/AirVid.mp4',
   },
   {
