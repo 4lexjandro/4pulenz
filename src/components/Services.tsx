@@ -19,7 +19,7 @@ const services = [
     subtitle: 'ONE-ON-ONE CREATIVE',
     description:
       'From portraits to passion projects, our private shoots focus on personalized, high-quality visuals with your unique style in mind.',
-    image: '/assets/images/Z.jpg'    
+    image: '/assets/images/FW.jpg'    
       // video: '/videos/AirVid.mp4',
   },
   {
@@ -28,7 +28,7 @@ const services = [
     subtitle: 'PRODUCT / BRANDING',
     description:
       'Make your brand unforgettable with cinematic commercials tailored to your vision, values, and target audience.',
-    image: '/assets/images/IMG_3883.PNG'    
+    image: '/assets/images/coke.jpg'    
       // video: '/videos/AirVid.mp4',
   },
   {
@@ -37,7 +37,7 @@ const services = [
     subtitle: 'LIVE THE MAGIC AGAIN',
     description:
       'Perfect for capturing the energy and emotion of live events, our recap package distills your event’s highlights into a visually compelling narrative.',
-    image: '/assets/images/FW.JPG'    
+    image: '/assets/images/table.jpg'    
       // video: '/videos/AirVid.mp4',
   },
 ];
