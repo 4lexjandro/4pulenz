@@ -10,7 +10,8 @@ const services = [
     subtitle: 'SHORT-FORM VIDEO PACKAGES',
     description:
       'Social media is a dynamic and fast-paced environment where consistency is essential to building a strong presence. To help your business stand out, our social media content package is designed to deliver high-quality reels that captivate your audience and drive engagement.',
-    video: '/videos/AirVid.mp4',
+    image: '/assets/images/CITY.DNG'    
+      // video: '/videos/AirVid.mp4',
   },
   {
     key: 'private',
@@ -18,7 +19,8 @@ const services = [
     subtitle: 'ONE-ON-ONE CREATIVE',
     description:
       'From portraits to passion projects, our private shoots focus on personalized, high-quality visuals with your unique style in mind.',
-    video: '/videos/AirVid.mp4',
+    image: '/assets/images/Z.jpg'    
+      // video: '/videos/AirVid.mp4',
   },
   {
     key: 'commercial',
@@ -26,7 +28,8 @@ const services = [
     subtitle: 'PRODUCT / BRANDING',
     description:
       'Make your brand unforgettable with cinematic commercials tailored to your vision, values, and target audience.',
-    video: '/videos/AirVid.mp4',
+    image: '/assets/images/IMG_3883.PNG'    
+      // video: '/videos/AirVid.mp4',
   },
   {
     key: 'events',
@@ -34,7 +37,8 @@ const services = [
     subtitle: 'LIVE THE MAGIC AGAIN',
     description:
       'Perfect for capturing the energy and emotion of live events, our recap package distills your event’s highlights into a visually compelling narrative.',
-    video: '/videos/AirVid.mp4',
+    image: '/assets/images/FW.JPG'    
+      // video: '/videos/AirVid.mp4',
   },
 ];
 
@@ -70,7 +74,9 @@ const Services = () => {
       <div className='max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-2'>
         {/* Video preview */}
         <div className='flex flex-col items-center md:items-start w-full'>
-          <video
+
+          {/* In case You want to implement videos, it is commmented out  */}
+          {/* <video
             autoPlay
             loop
             muted
@@ -79,7 +85,15 @@ const Services = () => {
           >
             <source src={activeService.video} type='video/mp4' />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
+          
+
+           <img
+               src={activeService.image}
+               alt={activeService.title}
+               className='rounded-xl w-full object-cover max-w-md shadow-md'
+            />
+
         </div>
 
         {/* Text content */}
