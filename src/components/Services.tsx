@@ -37,7 +37,7 @@ const services = [
     subtitle: 'LIVE THE MAGIC AGAIN',
     description:
       'Perfect for capturing the energy and emotion of live events, our recap package distills your event’s highlights into a visually compelling narrative.',
-    image: '/assets/images/table.jpg'    
+    image: '/assets/images/table.JPG'    
       // video: '/videos/AirVid.mp4',
   },
 ];
