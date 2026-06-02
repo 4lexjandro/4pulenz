@@ -81,7 +81,7 @@ const page = () => {
               src={img}
             />
           ))}
-          <video className="h-auto mb-3" autoPlay loop muted>
+          {/* <video className="h-auto mb-3" autoPlay loop muted>
             <source src="/videos/DJI.mp4" />
           </video>
           <video className="h-auto mb-3" autoPlay loop muted>
@@ -89,7 +89,7 @@ const page = () => {
           </video>
           <video className="h-auto mb-3" autoPlay loop muted>
             <source src="/videos/DJI3.mp4" />
-          </video>
+          </video> */}
         </div>
       </div>
     </div>
