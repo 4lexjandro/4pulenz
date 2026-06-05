@@ -8,10 +8,10 @@ export async function GET() {
   }
 
   const allProducts: any[] = [];
-  let nextPage: string | null = 'https://api.gumroad.com/v2/products';
+  let nextPage: string | null = 'https://api.gumroad.com/v2/products' as string | null;
 
   while (nextPage) {
-    const res = await fetch(nextPage, {
+    const res = await fetch(nextPage as string, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
