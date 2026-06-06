@@ -9,12 +9,12 @@ import { Logo } from '@Assets/images/image.barrel';
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const links = [
-    
-    { href: '/gallery', label: 'Gallery' },
-    { href: '/contact', label: 'Contact' },
-    // { href: '/services', label: 'Services' },
-  ];
+ const links = [
+  { href: '/gallery', label: 'Gallery' },
+  { href: '/pricing', label: 'Pricing' },
+  { href: '/contact', label: 'Contact' },
+  // { href: '/services', label: 'Services' },
+];
 
   return (
     <>

@@ -23,7 +23,7 @@ export default function RootLayout({
         <Navbar />
         {children}
 
-        <footer className='flex flex-col items-center justify-center py-2 gap-4 text-white bg-black/80'>
+        <footer className='flex flex-col items-center justify-center py-8 gap-4 text-white bg-black/80'>
           <h1 className='text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-red-500 drop-shadow-[0_0_8px_rgba(255,0,128,0.7)]'>
             Stay Connected
           </h1>
@@ -88,3 +88,4 @@ export default function RootLayout({
     </html>
   );
 }
+

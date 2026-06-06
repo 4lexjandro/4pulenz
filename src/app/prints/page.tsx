@@ -65,7 +65,10 @@ export default function PrintsPage() {
           <p className="text-xs tracking-[0.3em] uppercase text-neutral-500">digital prints</p>
           <h1 className={`text-5xl font-bold ${gradientText}`}>Own the shot</h1>
           <p className="text-neutral-400 text-sm max-w-sm leading-relaxed">
-            Every photo is a real car, shot in the wild. Find yours, pay once, download instantly.
+            Every photo is a real car , shot in the wild.
+          </p>
+          <p className="text-neutral-400 text-sm max-w-sm leading-relaxed">
+           Find yours , pay once , download instantly.
           </p>
         </div>
 
@@ -169,9 +172,9 @@ export default function PrintsPage() {
         )}
 
         {/* Footer */}
-        <p className="text-neutral-700 text-xs pt-6">
+        {/* <p className="text-neutral-700 text-xs pt-6">
           4pulenz.com &mdash; pay once, yours forever
-        </p>
+        </p> */}
 
       </div>
     </div>
