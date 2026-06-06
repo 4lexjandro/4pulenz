@@ -28,7 +28,8 @@ export default function PrintsPage() {
       .then(data => {
         if (Array.isArray(data)) {
   
-  setProducts([...data].reverse());
+  // setProducts([...data].reverse());
+  setProducts(data);
 }else {
           setError(true);
         }
