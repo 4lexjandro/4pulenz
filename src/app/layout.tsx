@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Instagram, Youtube, Tiktok, X } from '@Assets/svg/svg.barrel';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: '4PULENZ',
@@ -84,6 +85,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
